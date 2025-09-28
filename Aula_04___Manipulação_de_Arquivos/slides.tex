@@ -1,0 +1,121 @@
+\documentclass[handout,t]{beamer}
+% Para alterar a linguagem do documento
+\usepackage[portuges]{babel}
+% Para aceitar caracteres especias deretamente do teclado
+\usepackage[utf8]{inputenc}
+% Para seguir as normas da ABNT de citacao e referencias
+\usepackage[alf]{abntex2cite}
+% Para incluir figuras
+\usepackage{graphicx}
+% Para melhor ajuste da posisao das figuras
+\usepackage{float}
+% Para ajustar as dimensoes do layout da pagina
+\usepackage{geometry}
+% Para formatar estrutura e informacoes de formulas matematicas
+\usepackage{amsmath}
+% Para incluir simbolos especiais em formulas matematicas
+\usepackage{amssymb}
+% Para incluir links nas referencias
+\usepackage{url}
+% Para incluir paginas de documentos .pdf externos
+\usepackage{pgfpages}
+% Para ajustar o estilo dos contadores
+\usepackage{enumerate}
+% Para modificar a cor do texto
+\usepackage{color}
+% Para incluir condicoes
+\usepackage{ifthen}
+
+\usepackage{verbatim} % Para exibir código-fonte
+
+\usepackage{listings} % Pacote para código fonte
+\usepackage{xcolor}   % Para colorir o código
+
+\usepackage{listings} % Para código fonte
+\usepackage{xcolor}   % Para cores no código
+
+% Definição de cores para destacar o código
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codeblue}{rgb}{0,0,0.8}
+\definecolor{codered}{rgb}{0.6,0,0}
+\definecolor{background}{rgb}{0.95,0.95,0.95}
+
+% Configuração do estilo do código C++
+\lstdefinestyle{CppStyle}{
+    language=C++,
+    backgroundcolor=\color{background},
+    basicstyle=\ttfamily\large,  % Fonte maior para melhor leitura
+    keywordstyle=\color{codeblue}\bfseries,
+    commentstyle=\color{codegreen},
+    stringstyle=\color{codered},
+    breaklines=true,
+    numbers=left,
+    numbersep=10pt,
+    numberstyle=\small\color{gray},
+    frame=single,
+    captionpos=b,
+    showstringspaces=false
+}
+
+\usepackage{ragged2e}
+\usepackage{listings}
+\usepackage{caption}
+% Para colocar legendas em algo que nao e float
+\usepackage{capt-of}
+% Para definir o tema do slide
+\usetheme{Berlin}
+% Para difinir cores e background
+\usecolortheme{ufrn}
+% Para numerar as figuras
+\setbeamertemplate{caption}[numbered]
+
+
+
+
+% Título
+\title[Aula 04]{
+	Manipulação de Arquivos em C}
+% Data
+\date{\today}
+% Autores
+\author[Algoritmos e Estrutura de Dados I]{
+    Prof. George Felipe\inst{1}}
+	
+ 
+% Instituto
+\institute[UFERSA]{	
+	\inst{1}%
+	Departamento De Engenharias e Tecnologia}
+% Logo do canto inferior direito
+\pgfdeclareimage[height=0.7cm]{logo_UFERSA}{figuras/logo_UFERSA}
+\logo{
+	\vspace*{-0.25cm}
+	\pgfuseimage{logo_UFERSA}
+	\hspace*{-0.05cm}}
+
+
+\begin{document}
+% Sumário
+\frame{\titlepage}
+\section[]{}
+\begin{frame}{Sumário}
+	\tableofcontents
+\end{frame}
+
+% Hierarquia
+\include{tex/introducao/introducao}
+
+
+% Agradecimentos
+\section{}
+\begin{frame}{Até a próxima aula}
+        \begin{figure}
+        \centering
+        \includegraphics[width=0.75\linewidth]{figuras/coolcat.png}
+    \end{figure}
+\end{frame}
+
+
+
+
+\end{document}
